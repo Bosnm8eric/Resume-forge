@@ -23,3 +23,18 @@ COPY --from=build /app ./
 EXPOSE 10000
 ENV PORT 10000
 CMD ["npm", "start"]
+
+services:
+  - type: web
+    name: resume-forge
+    env: node
+    plan: free
+    buildCommand: npm install && npm run build
+    startCommand: npm start
+    envVars:
+      - key: OPENAI_API_KEY
+        sync: false
+      - key: NODE_ENV
+        value: production
+      - key: NEXT_PUBLIC_APP_NAME
+        value: Resume-Forge
