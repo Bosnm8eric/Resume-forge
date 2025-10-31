@@ -29,6 +29,19 @@ Built with **React**, **Express**, and **OpenAI**, it’s designed to run 24/7 w
 ---
 
 ## ⚙️ Setup & Deployment
+**Deploy on Render:**
+- Go to [render.com](https://render.com)
+- Create new **Web Service**
+- Upload backend ZIP or connect GitHub
+- Set the environment variables above
+- Deploy ✅
+
+---
+
+### 2️⃣ Frontend (React)
+**Folder:** `/resume_forge_frontend.zip`
+
+**Environment Variables:**
 
 ### 1️⃣ Backend (Express)
 **Folder:** `/resume_forge_backend.zip`
